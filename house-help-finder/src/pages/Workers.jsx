@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const workers = [
   { id: 1, name: 'Priya Sharma',  role: 'maid',       city: 'Mumbai',    area: 'Andheri',       exp: '4 years', salary: 9000,  avail: 'full-time', rating: 5, initials: 'PS', color: 'bg-emerald-100 text-emerald-800' },
@@ -13,6 +15,7 @@ const serviceTypes = ['maid','cook','driver','babysitter','cleaner','gardener'];
 const availOptions = ['full-time','part-time','live-in'];
 
 export default function Workers() {
+    const navigate = useNavigate();
   const [typeFilter, setTypeFilter]   = useState('');
   const [cityFilter, setCityFilter]   = useState('');
   const [availFilter, setAvailFilter] = useState('');
@@ -92,8 +95,11 @@ export default function Workers() {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((w) => (
-            <div key={w.id} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-green-400 transition-colors cursor-pointer">
-              <div className="flex items-center gap-3 mb-3">
+<div
+  key={w.id}
+  onClick={() => navigate(`/workers/${w.id}`)}
+  className="bg-white border border-gray-200 rounded-xl p-5 hover:border-green-400 transition-colors cursor-pointer"
+>              <div className="flex items-center gap-3 mb-3">
                 <div className={`w-11 h-11 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0 ${w.color}`}>
                   {w.initials}
                 </div>
