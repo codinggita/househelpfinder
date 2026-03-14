@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { workers, serviceTypes, availOptions, cities } from '../data/workers';
+
+const workers = [
+  { id: 1, name: 'Priya Sharma',  role: 'maid',       city: 'Mumbai',    area: 'Andheri',       exp: '4 years', salary: 9000,  avail: 'full-time', rating: 5, initials: 'PS', color: 'bg-emerald-100 text-emerald-800' },
+  { id: 2, name: 'Raju Verma',    role: 'driver',     city: 'Delhi',     area: 'Dwarka',        exp: '7 years', salary: 14000, avail: 'full-time', rating: 5, initials: 'RV', color: 'bg-blue-100 text-blue-800' },
+  { id: 3, name: 'Sunita Devi',   role: 'cook',       city: 'Bangalore', area: 'Koramangala',   exp: '5 years', salary: 10500, avail: 'part-time', rating: 4, initials: 'SD', color: 'bg-amber-100 text-amber-800' },
+  { id: 4, name: 'Meena Patel',   role: 'babysitter', city: 'Ahmedabad', area: 'Satellite',     exp: '2 years', salary: 7500,  avail: 'part-time', rating: 5, initials: 'MP', color: 'bg-pink-100 text-pink-800' },
+  { id: 5, name: 'Arjun Singh',   role: 'cleaner',    city: 'Pune',      area: 'Wakad',         exp: '3 years', salary: 8000,  avail: 'full-time', rating: 4, initials: 'AS', color: 'bg-green-100 text-green-800' },
+  { id: 6, name: 'Fatima Bi',     role: 'maid',       city: 'Hyderabad', area: 'Banjara Hills', exp: '6 years', salary: 11000, avail: 'live-in',   rating: 5, initials: 'FB', color: 'bg-purple-100 text-purple-800' },
+];
 
 const serviceTypes = ['maid','cook','driver','babysitter','cleaner','gardener'];
 const availOptions = ['full-time','part-time','live-in'];

@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Workers from './pages/Workers';
+import Register from './pages/Register';
+import RegisterSuccess from './pages/RegisterSuccess';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/workers" element={<Workers />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/register/success" element={<RegisterSuccess />} />
           </Routes>
         </main>
       </div>
