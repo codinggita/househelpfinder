@@ -27,6 +27,7 @@ export default function Footer() {
               <Link to="/register" className="text-sm text-gray-500 hover:text-green-700 transition-colors">register as worker</Link>
               <Link to="/about" className="text-sm text-gray-500 hover:text-green-700 transition-colors">about</Link>
 <Link to="/contact" className="text-sm text-gray-500 hover:text-green-700 transition-colors">contact</Link>
+<Link to="/faq" className="text-sm text-gray-500 hover:text-green-700 transition-colors">faq</Link>
             </div>
           </div>
 
