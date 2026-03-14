@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBar from '../components/SearchBar';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center pb-10 border-b border-gray-200 mb-10">
-        
+
         <div>
           <h1 className="text-4xl md:text-5xl font-serif font-semibold leading-tight mb-4 text-gray-900">
             Find trusted{' '}
@@ -49,6 +50,12 @@ export default function Home() {
           ))}
         </div>
 
+      </section>
+
+      {/* Search */}
+      <section className="mb-10">
+        <h2 className="font-serif text-2xl font-semibold mb-4">search for help</h2>
+        <SearchBar />
       </section>
 
       {/* How It Works */}
