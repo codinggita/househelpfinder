@@ -9,6 +9,7 @@ import WorkerDetail from './pages/WorkerDetail';
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/register/success" element={<RegisterSuccess />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />

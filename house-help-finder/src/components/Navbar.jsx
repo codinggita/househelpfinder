@@ -30,6 +30,7 @@ export default function Navbar() {
           <Link to="/" className={linkClass('/')}>home</Link>
           <Link to="/workers" className={linkClass('/workers')}>find workers</Link>
           <Link to="/about" className={linkClass('/about')}>about</Link>
+          <Link to="/contact" className={linkClass('/contact')}>contact</Link>
           <Link to="/register" className={linkClass('/register')}>register as worker</Link>
           <Link
             to="/register"
