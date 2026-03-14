@@ -115,17 +115,17 @@ export default function WorkerDetail() {
             <div className="flex flex-col sm:flex-row gap-3">
               
                 <a href={"tel:" + worker.phone}
-                className="flex-1 text-center bg-green-600 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors"
-              >
-                call {worker.phone}
-              </a>
-              <a href="https://wa.me/"
-                target="_blank"
-                rel="noreferrer"
-                className="flex-1 text-center border border-green-600 text-green-700 py-2.5 rounded-lg text-sm font-medium hover:bg-green-50 transition-colors"
-              >
-                message on whatsapp
-              </a>
+  className="flex-1 text-center bg-green-600 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors"
+>
+  call {worker.phone}
+</a>
+<a href={"https://wa.me/" + worker.phone}
+  target="_blank"
+  rel="noreferrer"
+  className="flex-1 text-center border border-green-600 text-green-700 py-2.5 rounded-lg text-sm font-medium hover:bg-green-50 transition-colors"
+>
+  message on whatsapp
+</a>
             </div>
             
           </div>
