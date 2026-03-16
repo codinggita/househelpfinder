@@ -52,7 +52,7 @@ export default function Navbar() {
           </button>
 
           <Link
-            to="/register"
+            to="/post-job"
             className="bg-green-600 text-white text-sm px-4 py-2 rounded-full font-medium hover:bg-green-700 transition-colors"
           >
             post a job
@@ -91,7 +91,7 @@ export default function Navbar() {
 
           <div className="pt-2 pb-1">
             <Link
-              to="/register"
+              to="/post-job"
               onClick={() => setMenuOpen(false)}
               className="block text-center bg-green-600 text-white text-sm px-4 py-2.5 rounded-full font-medium hover:bg-green-700 transition-colors"
             >

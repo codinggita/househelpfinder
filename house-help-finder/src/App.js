@@ -12,6 +12,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import { ThemeProvider } from './context/ThemeContext';
+import PostJob from './pages/PostJob';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/post-job" element={<PostJob />} />
             </Routes>
           </main>
           <Footer />
